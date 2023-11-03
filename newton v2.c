@@ -16,7 +16,7 @@ bool compare_double(double x1, double x2, int precision){
         int x1_int, x2_int;
         x1_int = x1 * precision;
         x2_int = x2 * precision;
-        return x1_int == x2_int
+        return x1_int == x2_int;
 }
 
 double find_zero(double first_guess) {
