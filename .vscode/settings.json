@@ -1,9 +1,0 @@
-{
-        "files.associations": {
-                "stdbool.h": "c",
-                "assert.h": "c",
-                "setjmp.h": "c",
-                "stddef.h": "c",
-                "stdarg.h": "c"
-        }
-}
