@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
+#include <float.h>
 
 // f(x) = 6x^3 + 2x^2 - 7x
 double f(double x){
@@ -13,14 +14,13 @@ double fdx(double x){
 }
 
 bool compare_double(double x1, double x2, int precision){
-        printf("test compare double\n");
         double rate = pow(10, precision);
         return (int)(x1 * rate) == (int)(x2 * rate);
 }
 
 double find_zero(double first_guess) {
         double xn = first_guess;         //First guess
-        double xn_last;
+        double xn_last = DBL_MAX;
         unsigned int n = 0;
 
         while(xn != xn_last){
